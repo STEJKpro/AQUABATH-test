@@ -1,0 +1,240 @@
+<!-- Gallery -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AQUABATH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+        p {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .logo {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .flex-column {
+            max-width: 250px;
+        }
+
+        a {
+            margin: 6px;
+        }
+    </style>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+    <div class="container logo">
+        <!-- <h1>AQUABATH</h1> -->
+        <img class="logo" src="src/AQUABATH_logo.png" alt="AQUABATH">
+    </div>
+    <div class="container">
+        <a class="btn" id="AB1011" href="#">
+            <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo.jpg" height="150px;" />
+            <p>AB1011</p>
+        </a>
+        <a class="btn" id="AB1083" href="#">
+            <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo.jpg" height="150px;" />
+            <p>AB1083</p>
+        </a>
+        <a class="btn" id="AB1001" href="#">
+            <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo.jpg" height="150px;" />
+            <p>AB1001</p>
+        </a>
+        <a class="btn" id="AB1077" href="#">
+            <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo.jpg" height="150px;" />
+            <p>AB1077</p>
+        </a>
+        <hr>
+    </div>
+
+    <div class="container-fluid collapse" id="modal">
+        <div class="d-flex flex-wrap justify-content-center">
+            <div class="d-flex flex-column">
+                <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="ModalImage" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid ">
+                        <img id="ModalSrc" src="" style="max-width: 100%; max-height: 80vh; display: block; margin-left: auto; margin-right: auto;">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let info = {
+            AB1011: ['http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_1.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_2.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_3.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_4.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_5.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_6.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo_7.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1011_scheme.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1011_scheme_1.jpg',
+            ],
+            AB1083: [
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_1.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_2.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_3.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_4.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_5.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_6.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_7.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo_8.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1083_scheme.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1083_scheme_1.jpg',
+            ],
+            AB1001: [
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_1.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_2.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_3.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_4.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_5.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo_6.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1001_scheme.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1001_scheme_1.jpg',
+            ],
+            AB1077: [
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_1.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_2.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_3.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_4.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_5.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_6.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_7.jpg',
+                'http://pravim.by/upload_price/AQUABATH/photo/AB1077_photo_8.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1077_scheme.jpg',
+                'http://pravim.by/upload_price/AQUABATH/scheme/AB1077_scheme_1.jpg',
+            ],
+        };
+
+        $("a.btn").click(function () {
+            // $(".collapse").removeClass("show");
+            article = $(this).attr("id");
+            url_list = info[article];
+            img_elements = document.getElementsByClassName("img-fluid");
+
+            for (i = 0; i < img_elements.length; i++) {
+                img_elements[i].src = '';
+                img_elements[i].src = url_list[i];
+            }
+            $(".collapse").addClass("show");
+
+
+        });
+
+
+
+        $(".open-modal").click(function () {
+            let clickedBtnHref = $(this).children("img").attr('src');
+            $('#ModalSrc').attr("src", clickedBtnHref);
+            // var myModalEl = document.getElementById('ModalImage');
+            // var modal = bootstrap.Modal.getInstance(myModalEl);
+            // modal.show()
+            var myModal = new bootstrap.Modal(document.getElementById('ModalImage'))
+            myModal.show()
+
+        });
+
+
+
+
+
+
+        // myModal.addEventListener('shown.bs.modal', function () {
+        // myInput.focus()
+        // }
+        // )
+    </script>
+</body>
+
+</html>
