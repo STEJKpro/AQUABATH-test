@@ -11,14 +11,24 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
     <style>
-        a.btn {
-            background-color: rgba(255, 255, 255, 0.6   );
+        @media only screen and (max-width: 768px) {
+
+            /* стили для устройств с шириной экрана до 768 пикселей, например, мобильных телефонов */
+            body {
+                font-size: 16px;
+            }
         }
-        a.btn >img{
+
+        a.btn {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        a.btn>img {
             opacity: 0.6;
 
         }
-        a.btn:hover >img{
+
+        a.btn:hover>img {
             opacity: 1;
 
         }
@@ -32,6 +42,8 @@
             margin-left: auto;
             margin-right: auto;
             text-align: center;
+            width: auto;
+            max-width: auto;
         }
 
         .flex-column {
@@ -41,19 +53,23 @@
         a {
             margin: 6px;
         }
-        body{
-            background-image: url("http://pravim.by/upload_price/AQUABATH/photo/AB2013B_photo.jpg");
+
+        body {
+            background-image: url("src/background.jpg"); 
             /* background-size: cover; */
-            backdrop-filter: blur(5px)!important;
+            backdrop-filter: blur(2px) !important;
+            justify-content: center;
             height: 100vh;
         }
 
-        img.img-fluid{
+        .open-modal>img.img-fluid {
             border: solid black 1px;
         }
-        a.open-modal{
+
+        a.open-modal {
             box-shadow: 0.3em 0.3em 3em black;
         }
+
         /* body{
             background-color: #686868 !important;
         } */
@@ -68,78 +84,78 @@
 
 </head>
 
-<body class="container">
+<body>
     <div class="container logo">
-        <!-- <h1>AQUABATH</h1> -->
-        <img class="logo" src="src/AQUABATH_logo.png" alt="AQUABATH">
+        <img class="logo img-fluid" src="src/AQUABATH_logo.png" alt="AQUABATH">
     </div>
-    <div class="container">
-        <a class="btn btn-outline-primary" id="AB1011" >
+
+    <div class="d-flex flex-wrap justify-content-center ">
+        <a class="btn btn-outline-primary" id="AB1011" href="#preview">
             <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1011_photo.jpg" height="150px;" />
             <p>AB1011</p>
         </a>
-        <a class="btn btn-outline-primary" id="AB1083" href="#">
+        <a class="btn btn-outline-primary" id="AB1083" href="#preview" >
             <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1083_photo.jpg" height="150px;" />
             <p>AB1083</p>
         </a>
-        <a class="btn btn-outline-primary" id="AB1001" href="#">
+        <a class="btn btn-outline-primary" id="AB1001" href="#preview">
             <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo.jpg" height="150px;" />
             <p>AB1001</p>
         </a>
-        <a class="btn btn-outline-primary id="AB1077" href="#">
+        <a class="btn btn-outline-primary id=" AB1077" href="#preview">
             <img src="http://pravim.by/upload_price/AQUABATH/photo/AB1001_photo.jpg" height="150px;" />
             <p>AB1077</p>
         </a>
         <hr>
     </div>
 
-    <div class="container-fluid collapse" id="modal">
+    <div class="container-fluid collapse" id="preview">
         <div class="d-flex flex-wrap justify-content-center">
             <div class="d-flex flex-column">
                 <!-- data-bs-toggle="modal" data-bs-target="#exampleModal" -->
-                <a class="open-modal" >
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
-                <a class="open-modal" href="#">
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
-                <a class="open-modal" href="#">
-                    <img class="img-fluid" src="" alt="">
-                </a>
-            </div>
-
-            <div class="d-flex flex-column">
-                <a class="open-modal" href="#">
-                    <img class="img-fluid" src="" alt="">
-                </a>
-                <a class="open-modal" href="#">
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
             </div>
 
             <div class="d-flex flex-column">
-                <a class="open-modal" href="#">
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
-                <a class="open-modal" href="#">
-                    <img class="img-fluid" src="" alt="">
-                </a>
-            </div>
-
-            <div class="d-flex flex-column">
-                <a class="open-modal" href="#">
-                    <img class="img-fluid" src="" alt="">
-                </a>
-                <a class="open-modal">
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
             </div>
 
             <div class="d-flex flex-column">
-                <a class="open-modal" href="#">
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
-                <a class="open-modal" href="#">
+                <a class="open-modal" href="#ModalImage">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#ModalImage">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#ModalImage">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+            </div>
+
+            <div class="d-flex flex-column">
+                <a class="open-modal" href="#ModalImage">
+                    <img class="img-fluid" src="" alt="">
+                </a>
+                <a class="open-modal" href="#ModalImage">
                     <img class="img-fluid" src="" alt="">
                 </a>
             </div>
@@ -150,15 +166,16 @@
 
 
     <div class="modal" id="ModalImage" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>AQUABATH</h5>
-                    <button type="button" class="btn-close btn-primary" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-primary" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid ">
-                        <img id="ModalSrc" src="" style="max-width: 100%; max-height: 75vh; display: block; margin-left: auto; margin-right: auto;">
+                        <img class="img-fluid" id="ModalSrc" src="">
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -231,7 +248,7 @@
             $("body").css("height", '100%')
             article = $(this).attr("id");
             url_list = info[article];
-            img_elements = document.getElementsByClassName("img-fluid");
+            img_elements = document.querySelectorAll(".open-modal > .img-fluid");
 
             for (i = 0; i < img_elements.length; i++) {
                 img_elements[i].src = '';
@@ -261,7 +278,7 @@
         });
 
         var myModalEl = document.getElementById('ModalImage')
-            myModalEl.addEventListener('hidden.bs.modal', function (event) {
+        myModalEl.addEventListener('hidden.bs.modal', function (event) {
             $("body").css("height", '100%')
         })
 
